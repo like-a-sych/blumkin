@@ -2991,6 +2991,10 @@
 	padding-top: 101px;
 	background-image: url(../img/bg9.jpg);
 	background-size: cover;
+	@media (max-width: ($md3 + px)) {
+		margin-top: 30px;
+		padding-top: 40px;
+	}
 
 	// .section-15__h2
 
@@ -3000,12 +3004,22 @@
 		b {
 			letter-spacing: 1.4px;
 		}
+
+		@media (max-width: ($md2 + px)) {
+			br {
+				display: none;
+			}
+		}
 	}
 
 	// .section-15__blumkin
 
 	&__blumkin {
 		margin-top: 26px;
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 15px;
+		}
 	}
 }
 
@@ -3013,12 +3027,30 @@
 	display: flex;
 	align-items: flex-start;
 
+	@media (max-width: ($md2 + px)) {
+		flex-direction: column;
+	}
+
 	// .blumkin__igor
 
 	&__igor {
 		position: relative;
 		left: -61px;
 		top: 2px;
+
+		@media (max-width: ($md1 + px)) {
+			align-self: flex-end;
+			width: 85%;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			top: 0;
+			left: unset;
+			align-self: center;
+		}
+		@media (max-width: ($md5 + px)) {
+			left: -40px;
+		}
 	}
 
 	// .blumkin__bigimage
@@ -3032,6 +3064,24 @@
 		position: absolute;
 		top: 165px;
 		right: -23px;
+
+		@media (max-width: ($md2 + px)) {
+			right: 62px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			right: 10px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			right: -32px;
+			top: 50px;
+		}
+
+		@media (max-width: ($md6 + px)) {
+			right: -46px;
+			top: 22px;
+		}
 	}
 
 	// .blumkin__videotext
@@ -3064,6 +3114,11 @@
 		transition: all 0.4s;
 		z-index: 1;
 
+		@media (max-width: ($md5 + px)) {
+			width: 90px;
+			height: 90px;
+		}
+
 		&:hover::after {
 			opacity: 1;
 			transition: all 0.4s;
@@ -3095,6 +3150,15 @@
 		position: absolute;
 		left: 228px;
 		bottom: 132px;
+		@media (max-width: ($md1 + px)) {
+			left: 166px;
+			bottom: 100px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			left: 16%;
+			bottom: 20px;
+		}
 	}
 
 	// .blumkin__aboutname
@@ -3105,6 +3169,9 @@
 		font-weight: 600;
 		font-style: normal;
 		line-height: calc(28 / 18 * 100%);
+		@media (max-width: ($md6 + px)) {
+			font-size: 15px;
+		}
 	}
 
 	// .blumkin__dolzh
@@ -3121,16 +3188,34 @@
 	// .blumkin__info
 
 	&__info {
+		@media (max-width: ($md2 + px)) {
+			order: -1;
+		}
 	}
 }
 
 .blinfo {
 	margin-left: -15px;
+	@media (max-width: ($md2 + px)) {
+		margin-left: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: auto;
+	}
 
 	// .blinfo__spisok
 
 	&__spisok {
 		margin-top: 72px;
+		@media (max-width: ($md2 + px)) {
+			margin-top: 40px;
+		}
+		@media (max-width: ($md3 + px)) {
+			margin-top: 10px;
+			display: grid;
+			gap: 20px;
+		}
 	}
 
 	// .blinfo__ig
@@ -3139,11 +3224,37 @@
 		display: flex;
 		align-items: center;
 
+		@media (max-width: ($md1 + px)) {
+			display: grid;
+			grid-template-columns: 143px auto;
+			gap: 0px 20px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			grid-template-columns: 90px auto;
+		}
+		@media (max-width: ($md5 + px)) {
+			grid-template-columns: 50px auto;
+		}
+
 		&:nth-child(2) {
 			margin-top: 47px;
+			@media (max-width: ($md1 + px)) {
+				margin-top: 23px;
+			}
+			@media (max-width: ($md2 + px)) {
+				margin-top: 40px;
+			}
+
+			@media (max-width: ($md3 + px)) {
+				margin-top: 0;
+			}
 
 			.blinfo__pic {
 				margin-top: -27px;
+				@media (max-width: ($md1 + px)) {
+					margin: 0;
+				}
 			}
 
 			.blinfo__text {
@@ -3153,24 +3264,48 @@
 
 		&:first-child {
 			align-items: flex-start;
+			@media (max-width: ($md1 + px)) {
+				align-items: center;
+			}
+
+			@media (max-width: ($md3 + px)) {
+				align-items: start;
+			}
 
 			.blinfo__text {
 				padding-top: 17px;
+				@media (max-width: ($md1 + px)) {
+					padding-top: 0;
+				}
 			}
 		}
 
 		&:last-child {
 			align-items: end;
 			margin-top: -38px;
+			@media (max-width: ($md1 + px)) {
+				margin: 0;
+				align-items: center;
+			}
+
+			@media (max-width: ($md3 + px)) {
+				align-items: flex-start;
+			}
 
 			.blinfo__pic {
 				margin-left: 13px;
 				margin-top: -18px;
 				margin-right: 21px;
+				@media (max-width: ($md1 + px)) {
+					margin: 0;
+				}
 			}
 
 			.blinfo__text {
 				padding-bottom: 34px;
+				@media (max-width: ($md1 + px)) {
+					padding-bottom: 0;
+				}
 			}
 		}
 	}
@@ -3181,6 +3316,12 @@
 		width: 200px;
 		margin-right: 34px;
 		text-align: right;
+
+		@media (max-width: ($md1 + px)) {
+			width: auto;
+			text-align: center;
+			margin-right: 0;
+		}
 	}
 
 	// .blinfo__text
@@ -3192,6 +3333,10 @@
 		font-weight: 400;
 		font-style: normal;
 		line-height: calc(30 / 18 * 100%);
+
+		@media (max-width: ($md4 + px)) {
+			font-size: 16px;
+		}
 	}
 
 	// .blinfo__practice
@@ -3199,6 +3344,15 @@
 	&__practice {
 		margin-top: 61px;
 		margin-left: 19px;
+		@media (max-width: ($md3 + px)) {
+			margin-top: 30px;
+			margin-left: 0;
+			align-self: flex-start;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 10px;
+		}
 	}
 }
 
@@ -3224,11 +3378,43 @@
 		line-height: calc(30 / 18 * 100%);
 		margin-top: 20px;
 
+		@media (max-width: ($md1 + px)) {
+			flex-direction: column;
+			br {
+				display: none;
+			}
+		}
+
+		@media (max-width: ($md2 + px)) {
+			flex-direction: unset;
+			br {
+				display: block;
+			}
+		}
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 10px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			flex-direction: column;
+			font-size: 16px;
+			margin-top: 0;
+		}
+
 		._checkeul {
 			padding-left: 47px;
 
+			@media (max-width: ($md3 + px)) {
+				padding-left: 38px;
+			}
+
 			&:not(:last-child) {
 				margin-right: 66px;
+
+				@media (max-width: ($md3 + px)) {
+					margin-right: 34px;
+				}
 			}
 
 			&:before {
@@ -3236,6 +3422,16 @@
 				width: 27px;
 				height: 27px;
 				background-size: cover;
+				@media (max-width: ($md1 + px)) {
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+				@media (max-width: ($md2 + px)) {
+					top: 8px;
+					bottom: unset;
+					margin: unset;
+				}
 			}
 		}
 	}
@@ -3251,6 +3447,14 @@
 		display: table;
 		margin-top: 52px;
 		transition: all 0.4s;
+		@media (max-width: ($md1 + px)) {
+			margin-bottom: 20px;
+			margin-top: 25px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 10px;
+		}
 
 		&:hover {
 			transition: all 0.4s;
