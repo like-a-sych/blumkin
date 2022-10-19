@@ -1,0 +1,279 @@
+<div class="modal fade callback-modal" id="callback" tabindex="-1" aria-labelledby="callbackLabel"
+	style="display: none;" aria-hidden="true">
+	<div class="callback-modal__dialog modal-dialog modal-dialog-centered" role="document">
+		<div class="callback-modal__content modal-content">
+			<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/close2.svg" alt="">
+			</button>
+			<div class="callback-modal__body modal-body">
+				<div class="callback-modal__container">
+					<div class="callback-modal__leftside">
+						<h3 class="callback-modal__title">
+							Закажите <br> обратный звонок
+						</h3>
+						<p class="callback-modal__subtitle">
+							Наш специалист свяжется <br>
+							с вами в течение 5 минут <br>
+							или в удобное для вас время
+						</p>
+					</div>
+					<div class="callback-modal__rightside">
+						<div class="callback-modal__progress-bar progress-bar prg1">
+							<div class="callback-modal__progress-text progress-text final-step">Почти готово...</div>
+							<div class="callback-modal__progress-line progress-line">
+								<div class="callback-modal__line line" style="left: -75%;" data-left="75"></div>
+							</div>
+						</div>
+						<form class="needs-validation" novalidate="" method="POST" action="#" enctype="multipart/form-data"
+							name="addcom4" id="addcom4" onsubmit="return false">
+							<!--<div class="visible-xs">
+								<h3>
+									Закажите <br> обратный звонок
+								</h3>
+								<p>
+									Наш специалист свяжется <br>
+									с вами в течение 5 минут <br>
+									или в удобное для вас время
+								</p>
+							</div>-->
+							<div class="callback-modal__forms">
+								<label for="callback-input" class="callback-modal__label">Введите ваш телефон*: </label>
+								<input type="tel" class="form-control callback-modal__phone" name="phone" id="callback-input"
+									placeholder="Введите номер телефона" required="">
+							</div>
+							<span class="callback-modal__label">Выберите способ связи:</span>
+							<div class="callback-modal__socials">
+								<button class="callback-modal__soc call active" data-sposob1="Позвонить">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+										<g>
+											<g>
+												<path fill="#39b4c5"
+													d="M11.613 8.66c-.773 0-1.532-.12-2.252-.357-.352-.12-.785-.01-1 .21L6.94 9.586c-1.646-.88-2.66-1.892-3.527-3.526l1.04-1.383c.27-.27.367-.663.25-1.034a7.181 7.181 0 0 1-.36-2.255c0-.56-.454-1.013-1.012-1.013H1.013C.455.374 0 .828 0 1.387 0 7.791 5.21 13 11.613 13c.558 0 1.013-.454 1.013-1.012V9.674c0-.557-.455-1.013-1.013-1.013z">
+												</path>
+											</g>
+										</g>
+									</svg>
+									<span>Позвонить</span>
+								</button>
+								<button class="callback-modal__soc whats" data-sposob1="WhatsApp">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+										style="width: 24px; height: 23px;">
+										<g>
+											<g>
+												<path fill="#25d366"
+													d="M14 6.813c0 3.768-3.077 6.823-6.873 6.823a6.859 6.859 0 0 1-3.322-.85L0 13.996l1.24-3.658a6.75 6.75 0 0 1-.986-3.525c0-3.765 3.077-6.817 6.873-6.817C10.923-.004 14 3.048 14 6.813zM7.127 1.082c-3.186 0-5.778 2.571-5.778 5.731a5.67 5.67 0 0 0 1.1 3.364l-.721 2.13 2.22-.708c.913.601 2.005.947 3.18.947 3.185 0 5.777-2.57 5.777-5.733 0-3.159-2.592-5.731-5.778-5.731zm3.372 8.1c-.14.388-.828.767-1.137.795-.309.029-.309.248-2.022-.42-1.712-.669-2.793-2.412-2.878-2.524-.084-.11-.687-.905-.687-1.728 0-.821.435-1.228.59-1.395a.633.633 0 0 1 .448-.21c.113 0 .225.017.323.017.099 0 .239-.057.38.276.14.338.477 1.16.519 1.244.042.082.07.18.014.29-.056.114-.084.181-.168.278-.085.1-.177.224-.253.295-.084.083-.172.175-.074.341.098.167.436.713.937 1.156.644.57 1.187.747 1.355.831.168.085.266.068.365-.04.098-.113.421-.492.533-.658.113-.166.225-.14.38-.085.154.056.982.462 1.15.545.17.085.281.126.324.198.042.067.042.403-.098.793z">
+												</path>
+											</g>
+										</g>
+									</svg>
+									<span>WhatsApp</span>
+								</button>
+								<button class="callback-modal__soc viber" data-sposob1="Viber">
+									<svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"
+										style="width: 22px; height: 22px;">
+										<g>
+											<g>
+												<path fill="#925fbb"
+													d="M12.867 8.1c-.406 3.402-2.92 3.733-3.365 3.877-.192.066-1.882.495-4.082.307-1.316 1.55-1.508 1.818-1.93 1.68-.37-.114-.349-.686-.349-.686l.003-1.411h-.003C-.074 10.944-.029 7.54.01 5.724c.038-1.816.383-3.28 1.362-4.28 2.182-2.045 8.34-1.79 10.164-.08h-.001c1.13 1.004 1.756 3.221 1.333 6.735zm-7.23 3.195c1.866.12 3.352-.257 3.512-.309.374-.122 2.412-.302 2.757-3.142-.003-.144.595-4.299-1.086-5.771C9.444.8 4.045.406 2.13 2.176c-.83.835-1.11 2.077-1.14 3.594-.03 1.514-.19 4.414 2.535 5.183l-.01 2.339c-.003.289.153.303.295.156.433-.445 1.825-2.153 1.825-2.153zm.77-8.789c1.974.013 3.56 1.405 3.58 3.803.003.234-.345.238-.345.004-.016-2.225-1.47-3.44-3.235-3.454-.228-.002-.228-.353 0-.353zm2.322 3.436c.027-1.156-.683-2.064-2.03-2.165-.227-.014-.203-.368.024-.352 1.554.115 2.38 1.203 2.351 2.526-.003.235-.35.226-.345-.009zm-.373 1.504c.394.228.895.582 1.227.9.187.156.23.396.102.643v.007c-.29.515-.83 1.093-1.387.911l-.006-.011c-.564-.16-1.895-.859-2.736-1.543C3.766 6.911 3.206 5 2.9 4.401c-.179-.57.38-1.12.892-1.415h.005c.246-.133.482-.087.64.106.149.207.443.476.88 1.253.163.3.062.601-.099.73l-.321.262c-.163.13-.142.38-.142.38s.477 1.842 2.258 2.305c0 0 .244.023.374-.147l.257-.326c.123-.163.42-.267.712-.103zm-1.39-2.722c-.23-.011-.208-.365.02-.35.746.04 1.161.476 1.199 1.263.01.234-.335.25-.346.017-.03-.603-.305-.897-.872-.93z">
+												</path>
+											</g>
+										</g>
+									</svg>
+									<span>Viber</span>
+								</button>
+								<button class="callback-modal__soc telegram" data-sposob1="Telegram">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18">
+										<g>
+											<g>
+												<path fill="#2a8fce"
+													d="M8.066 11.697l-.339 4.754c.485 0 .694-.208.946-.457l2.27-2.167 4.705 3.44c.863.48 1.47.227 1.703-.793L20.44 2.028l.001-.001C20.714.753 19.98.255 19.138.567L.987 7.507c-1.24.48-1.22 1.17-.21 1.482l4.64 1.441 10.779-6.734c.507-.335.969-.15.59.186z">
+												</path>
+											</g>
+										</g>
+									</svg>
+									<span>Telegram</span>
+								</button>
+							</div>
+							<span class="callback-modal__label">Выберите способ связи:</span>
+							<div class="callback-modal__times">
+								<button class=" callback-modal__time now active" data-sposob2="Сейчас">
+									<span>Сейчас</span>
+								</button>
+								<button class="callback-modal__time in-time" data-sposob2="По времени" data-bs-toggle="collapse"
+									href="#timeCollapse" role="button" aria-expanded="false" aria-controls="timeCollapse">
+									<span>По времени</span>
+								</button>
+							</div>
+							<div class="timeCollapse collapse" id="timeCollapse">
+								<div class="card card-body callback-modal__datetime">
+									<label for="date" class="callback-modal__label">Когда вам будет удобно принять звонок?</label>
+									<input type="datetime-local" id="date" name="date" value="2023-01-22T11:30" min="2022-10-04T11:30"
+										class="callback-modal__date">
+
+								</div>
+							</div>
+							<input type="hidden" name="sposob1" class="sposob1" value="Позвонить">
+							<input type="hidden" name="sposob2" class="sposob2" value="Сейчас">
+							<input type="hidden" name="date" class="date" value="">
+							<input type="hidden" name="from" value="Заказать обратный звонок">
+							<button class="_main-btn callback-modal__btn" onclick="doLoad4(document.getElementById('addcom4'))">
+								Заказать обратный звонок
+							</button>
+							<div class="callback-modal__policy">
+								<span>
+									Нажимая на кнопку, вы соглашаетесь <br> с <a class="policy" data-bs-toggle="modal"
+										data-bs-target="#policy">условиями
+										обработки персональных данных</a></span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade doctor-modal" id="doctor" tabindex="-1" aria-labelledby="doctorLabel" style="display: none;"
+	aria-hidden="true">
+	<div class="doctor-modal__dialog modal-dialog modal-dialog-centered" role="document">
+		<div class="doctor-modal__content modal-content">
+			<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/close2.svg" alt="">
+			</button>
+			<div class="doctor-modal__body modal-body">
+				<div class="doctor-modal__container">
+					<h2 class="doctor-modal__title">Асадулаева Марьям. Ортодонт</h2>
+					<div class="doctor-modal__text">
+						<p class="doctor-modal__description">Основным качеством в работе является индивидуальный подход к каждому
+							пациенту, составление полного плана лечения.
+							Преимущественно работаю на системе 3D smile, являясь одним из ведущих докторов компании. Так же работаю с
+							системой
+							Invisalign и брекет-системой</p>
+						<div class="doctor-modal__main">
+							<p class="doctor-modal__paragraph"><span class="doctor-modal__date"></span>Прохождение курса «Гнатология в
+
+								стоматологии диагностиками концепции Г. Славичека»</p>
+							<p class="doctor-modal__paragraph"><span class="doctor-modal__date">4 марта 2018 года —</span> «
+								Применение
+								ортодонтических кап в клинической практике ортодонта» 3D smile Р.А. Фадеев</p>
+							<p class="doctor-modal__paragraph"><span class="doctor-modal__date">22-24 марта 2019 г. —</span>
+								«Современные принципы ортодонтического лечения. Основы диагностики» И.Р. Нуртдинов ORTHOART</p>
+							<p class="doctor-modal__paragraph"><span class="doctor-modal__date">12 апреля 2019 г. —</span>
+								«Психологические аспекты коммуникации врача с пациентом» А. Винокурова 3D smile</p>
+							<p class="doctor-modal__paragraph"><span class="doctor-modal__date">17 февраля 2020 г. —</span> OHI-S
+								Ортодонтический конгресс</p>
+							<p class="doctor-modal__paragraph"><span class="doctor-modal__date">10 марта 2020 г. —
+								</span>сертификационных курс Invisalign</p>
+							<p class="doctor-modal__paragraph"><span class="doctor-modal__date">14 марта 2020 г. —</span> «Прозрачные
+								элайнеры», спикер Сандра Тай Invisalign</p>
+							<p class="doctor-modal__paragraph"><span class="doctor-modal__date">15 сентября 2020 г. -</span> «Дети 3D
+								smile» принципы лечения на детских элайнерах</p>
+							<p class="doctor-modal__paragraph"><span class="doctor-modal__date">24 сентября 2020 г. -</span>
+								«Ежегодное
+								собрание лучших ортодонтов Росиии» 3D smile</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade consultation-modal" id="consultation" tabindex="-1" aria-labelledby="consultationLabel"
+	style="display: none;" aria-hidden="true">
+	<div class="consultation-modal__dialog modal-dialog modal-dialog-centered" role="document">
+		<div class="consultation-modal__content modal-content">
+			<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/close2.svg" alt="">
+			</button>
+			<div class="consultation-modal__body modal-body">
+				<div class="consultation-modal__container">
+					<h2 class="consultation-modal__title">Получите бесплатную консультацию<br>
+						стоматолога в течение 10 минут</h2>
+					<h3 class="consultation-modal__subtitle">+ подарок: <b>бесплатная чистка зубов технологией Air Flow</b></h3>
+					<form class="needs-validation form-block__form form consultation-modal__form" novalidate="" method="POST"
+						action="#" enctype="multipart/form-data">
+						<div class="form__in">
+							<input type="hidden" name="from" value="Перезвоните мне. Консультация">
+							<div class="form__input">
+								<div>
+									<input type="tel" class="form-control consultation-modal__phone" name="phone"
+										placeholder="Введите ваш телефон" required="">
+								</div>
+							</div>
+							<button type="submit" class="form__main-btn _main-btn consultation-modal__btn">
+								Получите консультацию <br>
+								стоматолога ONLINE + подарок
+							</button>
+						</div>
+						<div class="consultation-modal__policy">
+							<span>
+								Нажимая на кнопку, вы соглашаетесь с <a class="policy" data-toggle="modal"
+									data-target="#policy">условиями
+									обработки персональных данных</a></span>
+						</div>
+						<div class="timer-block">
+							<span>
+								Возможность получить <br>
+								<strong>бесплатную чистку Air <br>
+									Flow</strong> исчезнет через:
+							</span>
+							<div id="countdown3" class="countdown">
+								<div class="countdown-number">
+									<span class="minutes countdown-time">19</span>
+									<span class="countdown-text">минут</span>
+								</div>
+								<div class="separator">:</div>
+								<div class="countdown-number">
+									<span class="seconds countdown-time">25</span>
+									<span class="countdown-text">секунд</span>
+								</div>
+							</div>
+							<picture>
+								<source srcset="img/present4.webp" type="image/webp">
+								<img src="img/present4.png" alt="" class="timer-present">
+							</picture>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade policy-modal" id="policy" tabindex="-1" aria-labelledby="policyLabel" style="display: none;"
+	aria-hidden="true">
+	<div class="policy-modal__dialog modal-dialog modal-dialog-centered" role="document">
+		<div class="policy-modal__content modal-content">
+			<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/close2.svg" alt="">
+			</button>
+			<div class="policy-modal__body modal-body">
+				<h2 class="policy-modal__title">Политика конфиденциальности</h2>
+				<div class="policy-modal__main">
+					<p class="policy-modal__text">Администрация данного Сайта не может передать или раскрыть информацию
+						предоставленную пользователем
+						(далее Пользователь) при регистрации и использовании функций сайта третьим лицам, кроме случаев,
+						описанных законодательством страны, на территории которой пользователь ведет свою деятельность.</p>
+					<p class="policy-modal__text">Для регистрации на сайте, пользователь обязан внести некоторую персональную
+						информацию. Для проверки
+						предоставленных данных, сайт оставляет за собой право потребовать доказательства идентичности
+						в онлайн или офлайн режимах.</p>
+					<p class="policy-modal__text">Сайт использует личную информацию Пользователя для обслуживания и для улучшения
+						качества
+						предоставляемых услуг. Часть персональной информации может быть предоставлена банку или платежной системе,
+						в случае, если предоставление этой информации обусловлено процедурой перевода средств платежной
+						системе, услугами которой Пользователь желает воспользоваться.</p>
+					<p class="policy-modal__text">Сайт прилагает все усилия для сбережения в сохранности личных данных
+						Пользователя.
+						Личная информация может быть раскрыта в случаях, описанных законодательством, либо
+						когда администрация сочтет подобные действия необходимыми для соблюдения юридической процедуры, судебного
+						распоряжения или легального процесса необходимого для работы Пользователя с Сайтом.</p>
+					<p class="policy-modal__text">В других случаях, ни при каких условиях, информация, которую Пользователь
+						передает Сайту,
+						не будет раскрыта третьим лицам.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

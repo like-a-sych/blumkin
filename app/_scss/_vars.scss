@@ -1,0 +1,130 @@
+//<ПЕРЕМЕННЫЕ>-------------------------------------------------
+$minWidth: 320px;
+$maxWidth: 1920; //ширина полотна макета
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 575.98;
+$md5: 479.98;
+$md6: 375;
+//<ПЕРЕМЕННЫЕ>-------------------------------------------------
+//<ОБНУЛЕНИЕ>--------------------------------------------------
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	outline: none;
+	letter-spacing: 0.4px;
+}
+
+a {
+	text-decoration: none;
+	transition: 0.4s;
+	&:hover {
+		color: inherit;
+	}
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	vertical-align: top;
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	color: #000;
+	font-family: Manrope;
+
+	b {
+		font-weight: 700;
+	}
+
+	nobr {
+		display: contents;
+	}
+}
+button {
+	border: none;
+	background: transparent;
+	transition: 0.4s;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	box-sizing: content-box;
+	@media (max-width: ($md1 + px)) {
+		max-width: 970px;
+	}
+	@media (max-width: ($md2 + px)) {
+		max-width: 750px;
+	}
+	@media (max-width: ($md3 + px)) {
+		max-width: none;
+		padding: 0 10px;
+	}
+
+	@media (max-width: ($md6 + px)) {
+		max-width: none;
+		padding: 0 5px;
+	}
+}
+/*Прорачность ввода формы*/
+/*
+input:valid,
+input[type="email"]:valid,
+textarea:valid {
+	padding-left: 18px;
+	padding-right: 10px;
+	background: transparent;
+}
+input:-webkit-autofill {
+	background-clip: text;
+}
+.was-validated .form-control:invalid {
+	background-color: #fff0f0;
+}
+*/
+//<ОБНУЛЕНИЕ>--------------------------------------------------

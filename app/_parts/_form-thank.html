@@ -1,0 +1,17 @@
+<form class="needs-validation form" novalidate="" method="POST" action="#" enctype="multipart/form-data" name="addcom3"
+	id="addcom3" onsubmit="return false">
+	<div class="form__container">
+		<div class="form-block form__in">
+			<input type="hidden" name="from" value="Корректировка номера">
+			<div class="form-block__input">
+				<div class="err" id="cerror3"></div>
+				<input type="tel" class="form-control" name="phone" placeholder="Введите ваш телефон"
+					value="<?php echo $_COOKIE['phone']; ?>">
+			</div>
+			<button data-bs-toggle="modal" data-bs-target="#callback" class="_main-btn">
+				Отправить корректный <br>
+				номер телефона
+			</button>
+		</div>
+	</div>
+</form>
