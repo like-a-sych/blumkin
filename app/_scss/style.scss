@@ -3478,6 +3478,12 @@
 		padding-top: 98px;
 		letter-spacing: 1.2px;
 
+		@media (max-width: ($md2 + px)) {
+			br {
+				display: none;
+			}
+		}
+
 		@media (max-width: ($md3 + px)) {
 			padding-top: 50px;
 		}
@@ -3725,6 +3731,17 @@
 .section-17 {
 	padding-top: 163px;
 
+	@media (max-width: ($md2 + px)) {
+		.visible-hand {
+			display: flex;
+		}
+
+		padding-top: 100px;
+	}
+	@media (max-width: ($md3 + px)) {
+		padding-top: 50px;
+	}
+
 	// .section-17__h2
 	&__container {
 		max-width: 1270px;
@@ -3736,18 +3753,30 @@
 		b {
 			letter-spacing: 1.5px;
 		}
+
+		@media (max-width: ($md1 + px)) {
+			br {
+				display: none;
+			}
+		}
 	}
 
 	// .section-17__adventeges
 
 	&__adventeges {
 		margin-top: 54px;
+		@media (max-width: ($md2 + px)) {
+			margin-top: 0px;
+		}
 	}
 }
 
 .adventege {
 	display: flex;
 	align-items: flex-start;
+	@media (max-width: ($md2 + px)) {
+		overflow: scroll;
+	}
 
 	// .adventege__item
 
@@ -3760,6 +3789,11 @@
 		border-radius: 16px;
 		background-color: #f7f8f8;
 		position: relative;
+
+		@media (max-width: ($md2 + px)) {
+			flex: 0 0 310px;
+			height: 540px;
+		}
 
 		&:not(:last-child) {
 			margin-right: 14px;
@@ -3775,7 +3809,16 @@
 			.adventege__ul {
 				margin-top: 30px;
 				margin-left: 2px;
+
+				@media (max-width: ($md2 + px)) {
+					margin-top: 13px;
+				}
 			}
+		}
+
+		@media (max-width: ($md1 + px)) {
+			padding-left: 15px !important;
+			padding-top: 15px !important;
 		}
 	}
 
@@ -3805,6 +3848,15 @@
 		b {
 			letter-spacing: 0.8px;
 		}
+
+		@media (max-width: ($md1 + px)) {
+			font-size: 22px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			font-size: 20px;
+			line-height: 1.3;
+		}
 	}
 
 	// .adventege__subtitle
@@ -3817,6 +3869,10 @@
 		margin-top: 14px;
 		padding-left: 3px;
 		letter-spacing: 0.8px;
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 10px;
+		}
 	}
 
 	// .adventege__ul
@@ -3826,6 +3882,14 @@
 		padding-right: 50px;
 		margin-left: 5px;
 		line-height: calc(24 / 16 * 100%);
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 5px;
+		}
+
+		@media (max-width: ($md1 + px)) {
+			padding-right: 20px;
+		}
 
 		._checkeul {
 			margin-bottom: 6px;
