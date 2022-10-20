@@ -180,6 +180,11 @@ a {
 	letter-spacing: normal;
 	line-height: calc(27 / 16 * 100%);
 	padding-left: 53px;
+
+	@media (max-width: ($md5 + px)) {
+		width: 100%;
+		padding-left: 35px;
+	}
 }
 
 ._h2biglight {
