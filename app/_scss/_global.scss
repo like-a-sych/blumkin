@@ -82,6 +82,10 @@
 	margin-bottom: 6px;
 	line-height: calc(25 / 14 * 100%);
 
+	@media (max-width: ($md6 + px)) {
+		padding-left: 10px;
+	}
+
 	&:before {
 		content: "";
 		position: absolute;
