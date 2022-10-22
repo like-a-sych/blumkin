@@ -357,6 +357,9 @@
 			max-width: 48px;
 			margin-left: 0;
 		}
+		@media (max-width: ($md6 + px)) {
+			max-width: 35px;
+		}
 	}
 
 	// .section-1__preims
