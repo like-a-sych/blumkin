@@ -1,6 +1,7 @@
-<section class="section-2">
+<section class="section-2 sec2-1">
 	<div class="section-2__block _container">
-		<div class="section-2__advantages advantages">
+		@include('../../_parts/_cursor.html')
+		<div class="section-2__advantages advantages adv2">
 
 			<div class="advantages__item">
 				<picture>
@@ -59,11 +60,28 @@
 					</li>
 				</ul>
 			</div>
-			<div class="advantages__item">
+			<div class="advantages__item advantages__rev">
 				<picture>
 					<source srcset="img/sec2-im.webp" type="image/webp">
 					<img src="img/sec2-im.png" alt="">
 				</picture>
+				<h3 class="advantages__title">
+					Качество лечения подтверждают <br>
+					независимые отзывы
+				</h3>
+				<div class="advantages__buttons">
+					<a href="#" class="advantages__btn advantages__reviews _main-btn">Прочитать отзывы</a>
+					<a href="#" class="advantages__btn advantages__results">Посмотреть<br>
+						результаты лечения</a>
+				</div>
+			</div>
+		</div>
+		<div class="advantages__item">
+			<picture>
+				<source srcset="img/sec2-im.webp" type="image/webp">
+				<img src="img/sec2-im.png" alt="">
+			</picture>
+			<div class="advantages__wrapper">
 				<h3 class="advantages__title">
 					Качество лечения подтверждают <br>
 					независимые отзывы
