@@ -570,9 +570,6 @@
 		@media (max-width: ($md3 + px)) {
 			justify-content: flex-start;
 			flex-direction: column;
-		}
-
-		@media (max-width: ($md4 + px)) {
 			gap: 0;
 		}
 	}
@@ -641,7 +638,7 @@
 			font-size: 18px;
 		}
 
-		@media (max-width: ($md4 + px)) {
+		@media (max-width: ($md3 + px)) {
 			margin-top: 10px;
 		}
 	}
