@@ -2746,12 +2746,37 @@
 	padding: 190px 0 150px 0;
 	position: relative;
 
+	@media (max-width: ($md3 + px)) {
+		padding-top: 115px;
+		padding-bottom: 50px;
+		.visible-hand {
+			display: flex;
+			z-index: 5;
+		}
+
+		._container {
+			margin-top: -25%;
+		}
+
+		&__wrapper {
+			backdrop-filter: blur(2px);
+		}
+	}
+
+	@media (max-width: ($md5 + px)) {
+		padding-bottom: 30px;
+	}
+
 	// .section-65__chair
 
 	&__chair {
 		position: absolute;
 		bottom: 0;
 		left: 0;
+
+		@media (max-width: ($md3 + px)) {
+			display: none;
+		}
 	}
 
 	// .section-65__container
@@ -2776,6 +2801,15 @@
 		z-index: 1;
 		display: flex;
 		justify-content: center;
+		@media (max-width: ($md2 + px)) {
+			top: 299px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			position: relative;
+			top: 0;
+			z-index: unset;
+		}
 	}
 
 	// .section-65__video-block
@@ -2788,6 +2822,16 @@
 		bottom: 315px;
 		left: 100px;
 		right: 0;
+		@media (max-width: ($md1 + px)) {
+			top: 44%;
+			bottom: auto;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			top: 33%;
+			bottom: auto;
+			text-shadow: 1px 1px 1px rgb(0 0 0);
+		}
 	}
 
 	// .section-65__video-play
@@ -2801,6 +2845,22 @@
 		background-repeat: no-repeat;
 		background-position: 55.5% center;
 		margin-right: 20px;
+
+		@media (max-width: ($md2 + px)) {
+			width: 100px;
+			height: 100px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			width: 70px;
+			height: 70px;
+			background-size: 30%;
+		}
+		@media (max-width: ($md6 + px)) {
+			width: 60px;
+			height: 60px;
+			background-size: 30%;
+		}
 	}
 
 	// .section-65__video-text
@@ -2824,15 +2884,31 @@
 		justify-content: space-between;
 		z-index: 2;
 		position: relative;
+		@media (max-width: ($md1 + px)) {
+			margin-top: 530px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 50%;
+			gap: 5px 15px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			display: flex;
+			overflow: scroll;
+			margin-top: 0;
+		}
 	}
 
 	// .section-65__doctor
 
 	&__doctor {
 		font-size: 17px;
-
 		text-align: center;
 		color: #ffffff;
+		@media (max-width: ($md3 + px)) {
+			flex: 0 0 305px;
+		}
 	}
 
 	// .section-65__doctor-name
@@ -2858,6 +2934,14 @@
 		justify-content: center;
 		margin-top: 65px;
 		position: relative;
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 30px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 10px;
+		}
 	}
 
 	// .section-65__line
@@ -2866,6 +2950,9 @@
 		position: absolute;
 		right: -10px;
 		top: -35px;
+		@media (max-width: ($md4 + px)) {
+			display: none;
+		}
 	}
 
 	// .section-65__btn

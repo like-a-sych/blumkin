@@ -728,6 +728,9 @@
 
 .sec3-main {
 	margin-top: 80px;
+	@media (max-width: ($md3 + px)) {
+		margin-top: 0;
+	}
 }
 
 .form-block {
@@ -2309,6 +2312,13 @@
 		margin-top: 60px;
 		display: flex;
 		justify-content: center;
+		@media (max-width: ($md3 + px)) {
+			margin-top: 30px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 15px;
+		}
 	}
 
 	&__btn {
