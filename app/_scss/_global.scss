@@ -123,7 +123,23 @@
 	font-size: 46px;
 	font-weight: 400;
 	line-height: calc(60 / 46 * 100%);
+}
 
+._h2bignormal {
+	font-size: 53px;
+	font-weight: 400;
+	line-height: calc(68 / 52 * 100%);
+}
+
+._h2biglight {
+	font-size: 52px;
+	font-weight: 300;
+	line-height: calc(68 / 52 * 100%);
+}
+
+._h2bignormal,
+._h2,
+._h2biglight {
 	@media (max-width: ($md2 + px)) {
 		font-size: 36px;
 	}
@@ -193,18 +209,6 @@ a {
 		width: 100%;
 		padding-left: 35px;
 	}
-}
-
-._h2biglight {
-	font-size: 52px;
-	font-weight: 300;
-	line-height: calc(68 / 52 * 100%);
-}
-
-._h2bignormal {
-	font-size: 53px;
-	font-weight: 400;
-	line-height: calc(68 / 52 * 100%);
 }
 
 ._sbold {
