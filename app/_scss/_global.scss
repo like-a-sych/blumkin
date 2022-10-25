@@ -61,6 +61,10 @@
 	letter-spacing: 0.6px;
 	line-height: calc(24 / 16 * 100%);
 
+	@media (max-width: ($md3 + px)) {
+		margin-bottom: 5px;
+	}
+
 	&:before {
 		content: "";
 		position: absolute;
