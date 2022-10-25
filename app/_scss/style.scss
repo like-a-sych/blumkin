@@ -5252,10 +5252,19 @@
 	&__h3 {
 		font-weight: 600;
 		margin-top: 30px;
+		@media (max-width: ($md1 + px)) {
+			margin-top: 15px;
+		}
 	}
 
 	&__horizon-button {
 		margin-top: 38px;
+		@media (max-width: ($md2 + px)) {
+			display: flex;
+			flex-direction: column;
+			background-color: #ecece8;
+			border-radius: 10px;
+		}
 	}
 }
 
@@ -5271,12 +5280,23 @@
 	&__inner {
 		position: absolute;
 		padding-left: 91px;
-
 		top: 0;
 		height: 100%;
 		display: flex;
 		align-items: flex-start;
 		padding-top: 68px;
+
+		@media (max-width: ($md1 + px)) {
+			padding-left: 50px;
+			padding-top: 20px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			position: static;
+
+			order: -1;
+			display: block;
+		}
 	}
 
 	// .horizon-button__title
@@ -5301,6 +5321,10 @@
 	&__subtext {
 		margin-top: 35px;
 		font-size: 18px;
+
+		@media (max-width: ($md1 + px)) {
+			margin-top: 25px;
+		}
 	}
 
 	// .horizon-button__ul
@@ -5328,6 +5352,10 @@
 		height: 92px;
 		font-size: 15px;
 		margin-top: 35px;
+
+		@media (max-width: ($md1 + px)) {
+			margin-top: 20px;
+		}
 	}
 }
 
