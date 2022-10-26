@@ -1087,20 +1087,66 @@
 .section-34 {
 	margin-top: 150px;
 	// .section-34__preims
+	@media (max-width: ($md3 + px)) {
+		&__wrapper {
+			display: flex;
+			overflow: scroll;
+			gap: 15px;
+		}
+		.visible-hand {
+			display: flex;
+		}
+
+		margin-top: 50px;
+	}
 
 	&__container {
 		padding-bottom: 80px;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+		@media (max-width: ($md3 + px)) {
+			padding-bottom: 0;
+		}
 	}
-	&__preims:first-of-type {
-		margin-bottom: 60px;
-		margin-top: 45px;
+	&__preims {
+		&:first-of-type {
+			margin-bottom: 60px;
+			margin-top: 45px;
+			@media (max-width: ($md2 + px)) {
+				margin-bottom: 20px;
+			}
+		}
+		@media (max-width: ($md3 + px)) {
+			display: contents;
+			margin-top: 0;
+			.preims-centered__preim:not(:last-child) {
+				margin-right: 0;
+			}
+		}
 	}
 
 	&__preims-centered {
 		font-size: 20px;
 		font-weight: 500;
 		line-height: calc(30 / 20 * 100%);
+		@media (max-width: ($md2 + px)) {
+			font-size: 18px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			font-size: 16px;
+			font-weight: 700;
+		}
+	}
+
+	.preims-centered:last-of-type {
+		.preims-centered__preim {
+			flex-basis: 50%;
+
+			@media (max-width: ($md3 + px)) {
+				flex: 0 0 312px;
+			}
+		}
 	}
 
 	.flex-ul {
