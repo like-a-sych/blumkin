@@ -1186,24 +1186,58 @@
 	margin: 95px 0;
 	// .section-35__items
 
+	@media (max-width: ($md3 + px)) {
+		margin: 50px 0;
+	}
+	@media (max-width: 650px) {
+		.visible-hand {
+			display: flex;
+		}
+	}
 	&__items {
 		margin-top: 40px;
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: ($md3 + px)) {
+			justify-content: center;
+		}
+		@media (max-width: 650px) {
+			overflow: scroll;
+			justify-content: flex-start;
+			margin-top: 0;
+		}
 	}
 
 	&__description {
 		font-weight: 500;
 		margin-top: 30px;
+		@media (max-width: 650px) {
+			margin-top: 15px;
+		}
 	}
 
 	// .section-35__item
 
 	&__item {
+		@media (max-width: ($md1 + px)) {
+			flex-basis: 50%;
+		}
+		@media (max-width: ($md2 + px)) {
+			br {
+				display: none;
+			}
+		}
+
+		@media (max-width: ($md3 + px)) {
+			flex: 0 0 305px;
+		}
 	}
 
 	&__item:not(:first-of-type) {
 		margin-left: 40px;
+		@media (max-width: ($md3 + px)) {
+			margin-left: 15px;
+		}
 	}
 	// .section-35__pic
 
