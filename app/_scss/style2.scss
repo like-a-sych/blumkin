@@ -515,11 +515,20 @@
 .section-31 {
 	margin-top: -20px;
 	padding-bottom: 70px;
+
+	@media (max-width: ($md3 + px)) {
+		padding-bottom: 20px;
+	}
 	// .section-31__horizon-button
 
 	&__h3 {
 		font-weight: 600;
 		margin-top: 30px;
+	}
+
+	.horizon-button__picture {
+		border-radius: 10px;
+		overflow: hidden;
 	}
 
 	&__horizon-button {
@@ -535,6 +544,26 @@
 		display: flex;
 		align-items: flex-start;
 		padding-top: 145px;
+
+		@media (max-width: ($md1 + px)) {
+			padding-left: 45px;
+			padding-top: 85px;
+		}
+		@media (max-width: ($md2 + px)) {
+			padding-left: 20px;
+			padding-top: 55px;
+		}
+		@media (max-width: ($md3 + px)) {
+			width: 100%;
+			backdrop-filter: blur(2px);
+			align-items: center;
+		}
+		@media (max-width: ($md4 + px)) {
+			position: static;
+			backdrop-filter: unset;
+			padding-top: 10px;
+			padding-left: 0;
+		}
 	}
 
 	&__horizon-title {
@@ -542,17 +571,45 @@
 		font-size: 36px;
 		font-weight: 700;
 		line-height: calc(48 / 36 * 100%);
+
+		@media (max-width: ($md2 + px)) {
+			font-size: 30px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			font-size: 24px;
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__ul {
 		margin-top: 25px;
 		font-size: 18px;
+
+		@media (max-width: ($md2 + px)) {
+			font-size: 16px;
+			margin-top: 15px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 10px;
+		}
 	}
 
 	&__ul {
 		._checkeul {
 			margin-bottom: 16px;
 			line-height: calc(26 / 18 * 100%);
+
+			@media (max-width: ($md2 + px)) {
+				margin-bottom: 10px;
+			}
+
+			@media (max-width: ($md3 + px)) {
+				margin-bottom: 5px;
+			}
 		}
 	}
 
