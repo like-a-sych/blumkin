@@ -625,8 +625,22 @@
 .section-32 {
 	margin-top: 90px;
 	// .section-32__title
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+	}
+
+	@media (max-width: ($md4 + px)) {
+		.visible-hand {
+			display: flex;
+		}
+	}
 
 	&__title {
+		@media (max-width: ($md3 + px)) {
+			br {
+				display: none;
+			}
+		}
 	}
 
 	// .section-32__items
@@ -634,6 +648,23 @@
 	// .section-32__item
 	&__item:last-of-type {
 		margin-left: 39px;
+
+		@media (max-width: ($md1 + px)) {
+			margin-left: 20px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			margin-left: 15px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			margin-left: 0;
+			margin-top: 15px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -641,11 +672,42 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 60px;
+
+	@media (max-width: ($md3 + px)) {
+		flex-direction: column;
+		margin-top: 25px;
+	}
+
+	@media (max-width: ($md4 + px)) {
+		flex-direction: row;
+		gap: 10px;
+		overflow: scroll;
+		margin-top: 0;
+	}
 }
 
 .implantation {
 	position: relative;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	@media (max-width: ($md3 + px)) {
+		background-image: url("../img/sec32-back.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	@media (max-width: ($md2 + px)) {
+		&:first-of-type &__picture {
+			text-align: center;
+		}
+	}
+
+	@media (max-width: ($md4 + px)) {
+		flex: 0 0 305px;
+		height: 400px;
+	}
 
 	&__inner {
 		padding: 70px 71px;
@@ -655,6 +717,30 @@
 		z-index: 2;
 		top: 0;
 		left: 0;
+
+		@media (max-width: ($md1 + px)) {
+			padding: 30px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			padding: 15px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			position: static;
+		}
+		@media (max-width: ($md4 + px)) {
+			display: flex;
+			flex-direction: column;
+			padding: 10px 10px 30px 10px;
+			justify-content: space-around;
+		}
+	}
+
+	&__background {
+		@media (max-width: ($md3 + px)) {
+			display: none;
+		}
 	}
 
 	// .implantation__title
@@ -663,6 +749,15 @@
 		font-size: 30px;
 		font-weight: 700;
 		line-height: calc(42 / 30 * 100%);
+		@media (max-width: ($md3 + px)) {
+			br {
+				display: none;
+			}
+		}
+
+		@media (max-width: ($md4 + px)) {
+			font-size: 24px;
+		}
 	}
 
 	// .implantation__subtitle
@@ -672,6 +767,24 @@
 		font-weight: 500;
 		line-height: calc(30 / 20 * 100%);
 		margin-top: 15px;
+
+		@media (max-width: ($md2 + px)) {
+			font-size: 18px;
+			br {
+				display: none;
+			}
+			margin-top: 5px;
+			@media (max-width: ($md3 + px)) {
+				br {
+					display: block;
+				}
+			}
+			@media (max-width: ($md4 + px)) {
+				br {
+					display: none;
+				}
+			}
+		}
 	}
 
 	// .implantation__text
@@ -682,18 +795,55 @@
 		line-height: calc(26 / 16 * 100%);
 		margin-top: 25px;
 		margin-bottom: 0;
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 15px;
+		}
 	}
 
 	// .implantation__teeth
-
+	&__picture {
+		@media (max-width: ($md4 + px)) {
+			order: 2;
+		}
+	}
 	&__teeth {
 		margin-top: 55px;
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 20px;
+			width: 65%;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			width: 40%;
+			position: absolute;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			right: 15px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			position: static;
+		}
 	}
 
 	&__apple {
 		position: absolute;
 		bottom: 0;
 		right: 0;
+		@media (max-width: ($md1 + px)) {
+			width: 80%;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			width: 65%;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			width: 38%;
+		}
 	}
 
 	&__list {
@@ -704,6 +854,14 @@
 		._checkeul {
 			margin-bottom: 3px;
 			line-height: calc(30 / 18 * 100%);
+		}
+
+		@media (max-width: ($md1 + px)) {
+			margin-top: 20px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 10px;
 		}
 	}
 
@@ -717,6 +875,13 @@
 		display: flex;
 		align-items: center;
 		margin-top: 35px;
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 15px;
+		}
+		@media (max-width: ($md4 + px)) {
+			order: 3;
+		}
 	}
 
 	&__company {
