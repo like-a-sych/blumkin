@@ -895,6 +895,23 @@
 .section-33 {
 	margin-top: 95px;
 
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+	}
+
+	@media (max-width: 650px) {
+		.visible-hand {
+			display: flex;
+		}
+	}
+
+	&__title {
+		@media (max-width: ($md1 + px)) {
+			br {
+				display: none;
+			}
+		}
+	}
 	// .section-33__companies
 
 	&__companies {
@@ -907,6 +924,11 @@
 		max-width: fit-content;
 		margin: auto;
 		margin-top: 30px;
+		@media (max-width: ($md3 + px)) {
+			gap: 15px;
+			padding: 5px 66px 5px 16px;
+			margin-top: 15px;
+		}
 	}
 
 	&__company {
@@ -919,22 +941,85 @@
 		font-size: 24px;
 		line-height: calc(34 / 24 * 100%);
 		margin-top: 30px;
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 15px;
+		}
+		@media (max-width: ($md4 + px)) {
+			br {
+				display: none;
+			}
+			font-size: 22px;
+		}
 	}
 
 	// .section-33__items
 
 	&__items {
 		margin-top: 40px;
+		flex-direction: row;
+		@media (max-width: ($md3 + px)) {
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+		@media (max-width: 650px) {
+			justify-content: flex-start;
+			overflow: scroll;
+			margin-top: 0;
+		}
 	}
 
 	// .section-33__item
 
+	&__item {
+		background-image: none;
+		@media (max-width: ($md3 + px)) {
+			flex: 0 0 305px;
+			height: auto;
+		}
+	}
+
 	&__item:last-of-type {
 		margin-left: 39px;
+
+		@media (max-width: ($md2 + px)) {
+			margin-left: 15px;
+		}
 	}
 
 	&__ul {
 		margin-top: 20px;
+	}
+	.implantation__title {
+		@media (max-width: ($md2 + px)) {
+			font-size: 25px;
+		}
+		@media (max-width: ($md3 + px)) {
+			font-size: 20px;
+		}
+	}
+
+	.implantation__subtitle {
+		@media (max-width: ($md3 + px)) {
+			br {
+				display: none;
+			}
+		}
+	}
+	.implantation__inner {
+		@media (max-width: ($md2 + px)) {
+			backdrop-filter: blur(2px);
+		}
+
+		@media (max-width: ($md3 + px)) {
+			position: absolute;
+			backdrop-filter: blur(4px);
+		}
+
+		@media (max-width: ($md4 + px)) {
+			justify-content: stretch;
+		}
 	}
 }
 
@@ -962,6 +1047,20 @@
 		left: 0;
 		right: -10px;
 		margin: 0 auto;
+		@media (max-width: ($md1 + px)) {
+			width: 85%;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			left: unset;
+			right: 0;
+			margin: unset;
+			width: 80%;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			width: 75%;
+		}
 	}
 
 	// .implantation__subtitle
