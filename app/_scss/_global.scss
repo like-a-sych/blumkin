@@ -140,9 +140,15 @@
 	line-height: calc(68 / 52 * 100%);
 }
 
+.section-44__h2 {
+	font-size: 44px;
+	font-weight: 300;
+}
+
 ._h2bignormal,
 ._h2,
-._h2biglight {
+._h2biglight,
+.section-44__h2 {
 	@media (max-width: ($md2 + px)) {
 		font-size: 36px;
 	}

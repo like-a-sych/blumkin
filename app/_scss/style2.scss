@@ -1922,6 +1922,7 @@
 		margin-top: 50px;
 		@media (max-width: ($md3 + px)) {
 			justify-content: center;
+			margin-top: 20px;
 		}
 
 		@media (max-width: 650px) {
@@ -2088,20 +2089,38 @@
 	// .section-44__container
 
 	// .section-44__h2
+	@media (max-width: ($md2 + px)) {
+		.visible-hand {
+			display: flex;
+		}
+	}
 
 	&__h2 {
 		margin-top: 95px;
 		/* Style for "Лечение зу" */
-		font-size: 44px;
-		font-weight: 300;
+
 		line-height: calc(60 / 44 * 100%);
 		text-align: center;
+
+		@media (max-width: ($md2 + px)) {
+			br {
+				display: none;
+			}
+		}
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 50px;
+		}
 	}
 
 	// .section-44__preims
 
 	&__preims {
 		margin-top: 40px;
+		@media (max-width: ($md2 + px)) {
+			overflow: scroll;
+			margin-top: 0;
+		}
 	}
 
 	// .section-44__text
@@ -2112,8 +2131,23 @@
 		line-height: calc(28 / 18 * 100%);
 	}
 
-	&__preims-centered:not(:first-of-type) {
-		margin-left: 45px;
+	&__preims-centered {
+		@media (max-width: ($md2 + px)) {
+			flex: 0 0 305px;
+		}
+		&:not(:first-of-type) {
+			margin-left: 45px;
+			@media (max-width: ($md2 + px)) {
+				margin-left: 15px;
+				br {
+					display: none;
+				}
+			}
+
+			@media (max-width: ($md4 + px)) {
+				margin-left: 10px;
+			}
+		}
 	}
 }
 
@@ -2125,18 +2159,42 @@
 	margin-top: 95px;
 	margin-bottom: 50px;
 
+	@media (max-width: ($md2 + px)) {
+		.visible-hand {
+			display: flex;
+		}
+	}
+
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
 	&__h2 {
 		font-weight: 500;
 	}
 
 	&__preims {
 		margin-top: 40px;
+		@media (max-width: ($md2 + px)) {
+			margin-top: 0;
+			overflow: scroll;
+		}
 	}
 
 	// .section-45__text
 
-	&__preims-centered:not(:first-of-type) {
-		margin-left: 45px;
+	&__preims-centered {
+		@media (max-width: ($md2 + px)) {
+			flex: 0 0 305px;
+		}
+		&:not(:first-of-type) {
+			margin-left: 45px;
+
+			@media (max-width: ($md2 + px)) {
+				margin-left: 10px;
+			}
+		}
 	}
 }
 
