@@ -105,7 +105,10 @@
 ._checkeul {
 	position: relative;
 	padding-left: 30px;
-	margin-bottom: 10px;
+
+	&:not(:last-of-type) {
+		margin-bottom: 10px;
+	}
 
 	&:before {
 		content: "";

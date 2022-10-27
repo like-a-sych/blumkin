@@ -1630,24 +1630,51 @@
 	margin-top: 95px;
 	margin-bottom: 50px;
 
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
 	// .section-40__items
 
 	&__items {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 50px;
+
+		@media (max-width: ($md3 + px)) {
+			flex-direction: column;
+			align-items: center;
+			width: fit-content;
+			margin: auto;
+			margin-top: 20px;
+		}
 	}
 
 	// .section-40__item
 
 	&__item {
 		position: relative;
-		flex: 0 1 560px;
-		height: 380px;
+
+		@media (max-width: ($md3 + px)) {
+			max-width: 360px;
+		}
 	}
 
 	&__item:not(:first-of-type) {
 		margin-left: 50px;
+		@media (max-width: ($md1 + px)) {
+			margin-left: 20px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			margin-left: 15px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			margin-left: 0;
+			margin-top: 15px;
+		}
 	}
 
 	// .section-40__teeth
@@ -1656,6 +1683,15 @@
 		position: absolute;
 		right: 0;
 		top: 17%;
+		@media (max-width: ($md1 + px)) {
+			width: 22%;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			bottom: 0;
+			top: 0;
+			margin: auto;
+		}
 	}
 
 	// .section-40__description
@@ -1665,9 +1701,22 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
+
 		z-index: 2;
-		padding: 90px 60px;
+		padding-top: 90px;
+		padding-left: 60px;
+		@media (max-width: ($md1 + px)) {
+			padding-top: 50px;
+			padding-left: 30px;
+		}
+		@media (max-width: ($md2 + px)) {
+			padding-top: 10px;
+			padding-left: 20px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			padding-left: 10px;
+		}
 	}
 
 	// .section-40__subtitle
@@ -1682,6 +1731,14 @@
 
 	&__ul {
 		margin-top: 15px;
+		@media (max-width: ($md2 + px)) {
+			max-width: 78%;
+			margin-top: 10px;
+		}
+
+		@media (max-width: ($md6 + px)) {
+			margin-top: 5px;
+		}
 	}
 
 	// .section-40__li
@@ -1690,7 +1747,24 @@
 		font-size: 16px;
 		font-weight: 500;
 		line-height: calc(26 / 16 * 100%);
-		margin-bottom: 15px;
+		&:not(:last-of-type) {
+			margin-bottom: 15px;
+
+			@media (max-width: ($md2 + px)) {
+				margin-bottom: 10px;
+			}
+		}
+
+		@media (max-width: ($md2 + px)) {
+			line-height: 1.4;
+			br {
+				display: none;
+			}
+		}
+
+		@media (max-width: ($md6 + px)) {
+			font-size: 14px;
+		}
 	}
 }
 /* section-40 */
