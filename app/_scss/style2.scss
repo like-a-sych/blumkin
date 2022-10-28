@@ -2652,26 +2652,52 @@
 .section-51 {
 	margin-top: 95px;
 
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+		.visible-hand {
+			display: flex;
+		}
+	}
+
 	// .section-51__items
 
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		flex-wrap: wrap;
 		gap: 50px 40px;
 		margin-top: 40px;
+
+		@media (max-width: ($md2 + px)) {
+			gap: 30px 20px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			display: flex;
+			gap: 15px;
+			overflow: scroll;
+			margin-top: 0;
+		}
 	}
 
 	// .section-51__item
 
-	&__item:nth-of-type(4) {
-		margin-left: 0;
+	&__item {
+		@media (max-width: ($md3 + px)) {
+			flex: 0 0 305px;
+		}
+		&:nth-of-type(4) {
+			margin-left: 0;
+		}
 	}
 
 	// .section-51__pic
 
 	&__pic {
 		margin-bottom: 20px;
+
+		@media (max-width: ($md3 + px)) {
+			margin-bottom: 10px;
+		}
 	}
 
 	// .section-51__card-description
@@ -2679,6 +2705,10 @@
 	&__card-description {
 		margin-top: 0;
 		margin-bottom: 17px;
+
+		@media (max-width: ($md3 + px)) {
+			margin-bottom: 5px;
+		}
 	}
 
 	// .section-51__text
@@ -2687,6 +2717,12 @@
 		font-size: 16px;
 		font-weight: 500;
 		line-height: calc(24 / 16 * 100%);
+
+		@media (max-width: ($md2 + px)) {
+			br {
+				display: none;
+			}
+		}
 	}
 }
 
