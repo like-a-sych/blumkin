@@ -2453,7 +2453,7 @@
 			padding: 0;
 			display: grid;
 			grid-template-columns: 60px auto;
-			margin-top: 5px;
+			margin-top: 10px;
 		}
 
 		@media (max-width: ($md5 + px)) {
@@ -2516,9 +2516,25 @@
 	margin-top: 95px;
 	margin-bottom: 50px;
 
+	@media (max-width: ($md2 + px)) {
+		.visible-hand {
+			display: flex;
+		}
+	}
+
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
 	// .section-48__title
 
 	&__title {
+		@media (max-width: ($md4 + px)) {
+			br {
+				display: none;
+			}
+		}
 	}
 
 	// .section-48__items
@@ -2527,16 +2543,32 @@
 		margin-top: 50px;
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: ($md2 + px)) {
+			overflow: scroll;
+			margin-top: 0;
+		}
 	}
 
 	// .section-48__item
 
 	&__item {
 		flex: 0 1 33.3%;
+
+		@media (max-width: ($md2 + px)) {
+			flex: 0 0 305px;
+		}
 	}
 
 	&__item:not(:first-of-type) {
 		margin-left: 45px;
+
+		@media (max-width: ($md1 + px)) {
+			margin-left: 15px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-left: 10px;
+		}
 	}
 
 	// .section-48__description
@@ -2546,6 +2578,24 @@
 		margin-top: 22px;
 		grid-template-columns: auto 1fr;
 		align-items: flex-start;
+		@media (max-width: ($md1 + px)) {
+			br {
+				display: none;
+			}
+		}
+
+		@media (max-width: ($md1 + px)) {
+			grid-template-columns: 10% 1fr;
+			gap: 10px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 10px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 5px;
+		}
 	}
 
 	// .section-48__number
@@ -2553,6 +2603,9 @@
 	&__number {
 		margin-top: 8px;
 		margin-right: 17px;
+		@media (max-width: ($md1 + px)) {
+			margin-right: 0;
+		}
 	}
 
 	// .section-48__text
@@ -2566,6 +2619,13 @@
 		font-size: 20px;
 		font-weight: 700;
 		line-height: calc(30 / 20 * 100%);
+		@media (max-width: ($md1 + px)) {
+			font-size: 19px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			font-size: 18px;
+		}
 	}
 
 	// .section-48__paragraph
@@ -2575,6 +2635,15 @@
 		font-weight: 400;
 		line-height: calc(24 / 16 * 100%);
 		margin-top: 10px;
+		margin-bottom: 0;
+
+		@media (max-width: ($md1 + px)) {
+			font-size: 15px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 5px;
+		}
 	}
 }
 /* section-48*/
