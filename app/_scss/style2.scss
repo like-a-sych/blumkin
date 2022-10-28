@@ -1188,7 +1188,7 @@
 	// .section-35__items
 
 	@media (max-width: ($md3 + px)) {
-		margin: 50px 0;
+		margin: 30px 0;
 	}
 	@media (max-width: 650px) {
 		.visible-hand {
@@ -1212,8 +1212,12 @@
 	&__description {
 		font-weight: 500;
 		margin-top: 30px;
-		@media (max-width: 650px) {
+
+		@media (max-width: ($md3 + px)) {
 			margin-top: 15px;
+		}
+		@media (max-width: ($md4 + px)) {
+			margin-top: 10px;
 		}
 	}
 
@@ -3177,28 +3181,103 @@
 
 /* section-54*/
 .section-54 {
+	margin-top: 90px;
 	padding-bottom: 100px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+		padding-bottom: 30px;
+		.visible-hand {
+			display: flex;
+		}
+		.preims-centered {
+			display: contents;
+		}
+
+		&__wrapper {
+			display: flex;
+			overflow: scroll;
+		}
+	}
 	// .section-54__block-container
 
 	&__item &__block-container {
 		padding-right: 83px;
+		@media (max-width: ($md2 + px)) {
+			padding-right: 15px;
+		}
+		@media (max-width: ($md3 + px)) {
+			backdrop-filter: none;
+			position: static;
+			padding: 0;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
 	}
 
 	&__item {
 		margin-top: 59px;
+		.horizon-blocks__inner {
+			@media (max-width: ($md2 + px)) {
+				backdrop-filter: blur(2px);
+			}
+
+			@media (max-width: ($md3 + px)) {
+				padding-left: 0;
+			}
+			.horizon-blocks__picture {
+				@media (max-width: ($md3 + px)) {
+					border-radius: 10px;
+					overflow: hidden;
+				}
+			}
+		}
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 30px;
+		}
+		@media (max-width: ($md3 + px)) {
+			flex: 0 0 305px;
+			margin-top: 0;
+			margin-left: 15px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-left: 10px;
+		}
 	}
 
 	&__text {
 		font-size: 20px;
 		font-weight: 500;
 		line-height: calc(30 / 20 * 100%);
+
+		@media (max-width: ($md3 + px)) {
+			font-size: 16px;
+			font-weight: 700;
+			margin-top: 15px;
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 10px;
+		}
 	}
 
 	// .section-54__list-item
-
+	&__list {
+		@media (max-width: ($md3 + px)) {
+			margin-top: 5px;
+		}
+	}
 	&__list &__list-item {
 		margin-right: 30px;
+
+		@media (max-width: ($md3 + px)) {
+			margin-right: 20px;
+		}
 	}
 }
 
