@@ -342,10 +342,12 @@
 	font-size: 20px;
 	font-weight: 700;
 	line-height: calc(30 / 20 * 100%);
+	@media (max-width: ($md3 + px)) {
+		margin-top: 10px;
+	}
 
 	@media (max-width: ($md4 + px)) {
 		font-size: 18px;
-		margin-top: 10px;
 	}
 }
 
@@ -3002,10 +3004,29 @@
 .section-55 {
 	margin-top: 95px;
 
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+	}
+
 	&__subtitle {
 		font-size: 36px;
 		font-weight: 700;
 		line-height: calc(48 / 36 * 100%);
+		@media (max-width: ($md2 + px)) {
+			font-size: 28px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			font-size: 23px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			br {
+				display: none;
+			}
+
+			font-size: 20px;
+		}
 	}
 
 	&__text {
@@ -3016,6 +3037,25 @@
 		z-index: 2;
 		top: 0;
 		left: 0;
+
+		@media (max-width: ($md1 + px)) {
+			padding: 40px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			padding: 20px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			padding-top: 10px;
+			backdrop-filter: blur(1px);
+		}
+
+		@media (max-width: ($md4 + px)) {
+			position: static;
+			padding: 0;
+			margin-top: 10px;
+		}
 	}
 
 	&__li {
@@ -3024,21 +3064,44 @@
 
 	&__list {
 		margin-top: 25px;
+		@media (max-width: ($md3 + px)) {
+			margin-top: 15px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 10px;
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__list-item {
 		font-size: 18px;
 		font-weight: 400;
 		line-height: calc(26 / 18 * 100%);
+
+		@media (max-width: ($md3 + px)) {
+			font-size: 16px;
+		}
 	}
 
 	&__list-item::before {
 		top: 8px;
+		@media (max-width: ($md4 + px)) {
+			top: 3px;
+		}
 	}
 
 	&__card {
 		margin-top: 50px;
 		position: relative;
+		@media (max-width: ($md4 + px)) {
+			picture img {
+				border-radius: 10px;
+				overflow: hidden;
+			}
+		}
 	}
 }
 
