@@ -3568,6 +3568,12 @@
 		padding-top: 98px;
 		letter-spacing: 1.2px;
 
+		@media (max-width: ($md1 + px)) {
+			br {
+				display: none;
+			}
+		}
+
 		@media (max-width: ($md2 + px)) {
 			br {
 				display: none;
@@ -3721,33 +3727,33 @@
 	}
 
 	// .docs__href
-
 	&__href {
-		color: #3babbb;
-		font-size: 17px;
-		font-weight: 500;
-		font-style: normal;
-		line-height: calc(27 / 17 * 100%);
-		display: table;
 		margin-top: 31px;
-		border-bottom: 1px dashed;
-		margin-left: 2px;
-		transition: all 0.4s;
+	}
+	&__href {
+		span {
+			color: #3babbb;
+			font-size: 17px;
+			font-weight: 500;
+			font-style: normal;
+			line-height: calc(27 / 17 * 100%);
+			border-bottom: 1px dashed;
+			margin-left: 2px;
+			transition: all 0.4s;
+			display: inline;
+			text-align: center;
+
+			&:hover {
+				transition: all 0.4s;
+				color: #1cb4ca;
+			}
+		}
 
 		@media (max-width: ($md5 + px)) {
 			font-size: 14px;
 			margin-top: 15px;
-		}
-
-		@media (max-width: ($md6 + px)) {
 			max-width: 50%;
 			text-align: left;
-			border-bottom: none;
-		}
-
-		&:hover {
-			transition: all 0.4s;
-			color: #1cb4ca;
 		}
 	}
 

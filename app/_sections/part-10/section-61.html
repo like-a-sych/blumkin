@@ -9,14 +9,19 @@
 			<a class="section-61__card-video _video">
 				<img src="img/sec61-play.svg" alt="">
 			</a>
-			<picture>
-				<source srcset="img/sec61-back.webp" type="image/webp">
-				<img src="img/sec61-back.png" alt="">
-			</picture>
-			<picture>
-				<source srcset="img/sec61-blum.webp" type="image/webp">
-				<img src="img/sec61-blum.png" alt="" class="section-61__blumkin">
-			</picture>
+			<div class="section-61__back">
+				<picture>
+					<source srcset="img/sec61-back.webp" type="image/webp">
+					<img src="img/sec61-back.png" alt="">
+				</picture>
+			</div>
+
+			<div class="section-61__blum ">
+				<picture>
+					<source srcset="img/sec61-blum.webp" type="image/webp">
+					<img src="img/sec61-blum.png" alt="" class="section-61__blumkin">
+				</picture>
+			</div>
 
 			<div class="section-61__description">
 				<span class="section-61__ellipse">
@@ -36,13 +41,14 @@
 				</ul>
 				<div class="section-61__flex">
 					<div class="section-61__serts docs__serts">
-						<a data-fancybox="gallery" href="img/sec61-sert1.png"><img src="img/sec61-sert1.png" alt=""></a>
-						<a data-fancybox="gallery" href="img/sec61-sert2.png"><img src="img/sec61-sert2.png" alt=""></a>
-						<a data-fancybox="gallery" href="img/sec61-sert3.png"><img src="img/sec61-sert3.png" alt=""></a>
+						<a data-fancybox="gallery1" href="img/sec61-sert1.png"><img src="img/sec61-sert1.png" alt=""></a>
+						<a data-fancybox="gallery1" href="img/sec61-sert2.png"><img src="img/sec61-sert2.png" alt=""></a>
+						<a data-fancybox="gallery1" href="img/sec61-sert3.png"><img src="img/sec61-sert3.png" alt=""></a>
 					</div>
-					<div class="section-61__docs-href docs__href">
-						Узнать о враче подробнее
-					</div>
+					<button class="section-61__docs-href docs__href" data-bs-toggle="modal" data-bs-target="#doctor">
+						<span>Узнать о враче подробнее</span>
+					</button>
+
 				</div>
 			</div>
 

@@ -147,11 +147,16 @@
 	font-size: 44px;
 	font-weight: 300;
 }
+.section-61__title {
+	font-size: 43px;
+	line-height: calc(59 / 43 * 100%);
+}
 
 ._h2bignormal,
 ._h2,
 ._h2biglight,
-.section-44__h2 {
+.section-44__h2,
+.section-61__title {
 	@media (max-width: ($md2 + px)) {
 		font-size: 36px;
 	}
@@ -197,6 +202,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	img {
+		margin-left: 6px;
+	}
 }
 
 a {
