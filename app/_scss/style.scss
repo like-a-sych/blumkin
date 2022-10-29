@@ -911,6 +911,10 @@
 	@media (max-width: ($md2 + px)) {
 		width: 100%;
 	}
+
+	@media (max-width: ($md6 + px)) {
+		padding-left: 40px;
+	}
 }
 
 /* section-3 */
