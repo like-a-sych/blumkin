@@ -3538,6 +3538,15 @@
 .section-58 {
 	margin-top: 105px;
 
+	@media (max-width: ($md2 + px)) {
+		.visible-hand {
+			display: flex;
+		}
+	}
+
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+	}
 	// .section-58__title
 
 	&__title {
@@ -3547,12 +3556,26 @@
 
 	&__advantages {
 		margin-top: 49px;
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 0;
+		}
 	}
 
 	// .section-58__advantages-title
 
 	&__advantages-title {
 		margin-top: 20px;
+		@media (max-width: ($md2 + px)) {
+			margin-top: 15px;
+		}
+		@media (max-width: ($md3 + px)) {
+			margin-top: 10px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-top: 5px;
+		}
 	}
 }
 
