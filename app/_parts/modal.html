@@ -241,6 +241,406 @@
 	</div>
 </div>
 
+<div class="modal fade quizModal-modal" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel"
+	style="display: none;" aria-hidden="true">
+	<div class="quizModal-modal__dialog modal-dialog modal-dialog-centered" role="document">
+		<div class="quizModal-modal__content modal-content">
+			<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/close2.svg" alt="">
+			</button>
+			<div class="quizModal-modal__body modal-body">
+				<div class="quiz" id="quiz-block">
+					<div class="quiz-inner">
+						<form class="needs-validation" novalidate="" method="POST" action="#" enctype="multipart/form-data"
+							name="quiz" id="quiz" onsubmit="return false">
+							<div class="progress-bar prg1">
+								<div class="progress-text">Осталось <span><b><b class="current-step">4</b></span> вопроса из 4</b>
+								</div>
+								<div class="progress-line">
+									<div class="line" style="left:-75%" data-left="75"></div>
+								</div>
+							</div>
+
+							<div class="step1 active step quiz-inner__item ">
+								<div class="step__block">
+									<div class="step__left">
+										<h3 class="step__title">01. Какое у вас состояние полости рта?</h3>
+										<div class="step__variants quiz-variants">
+											<div class="quiz-variants__variant" data-step="step2">
+												<input type="radio" name="question-1" id="q-1-1" value="На обеих челюстях" required=""
+													data-index="1-1">
+												<label for="q-1-1" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/quiz_1-1.webp" type="image/webp">
+																<img src="img/quiz_1-1.jpg" alt="">
+															</picture>
+														</div>
+														<div class="quiz-question__label">
+															Потеря 1-3 зубов
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="quiz-variants__variant" data-step="step2">
+												<input type="radio" name="question-1" id="q-1-2" value="Только на верхней челюсти" required=""
+													data-index="1-2">
+												<label for="q-1-2" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/quiz_1-2.webp" type="image/webp">
+																<img src="img/quiz_1-2.jpg" alt="">
+															</picture>
+														</div>
+														<div class="quiz-question__label">
+															Потеря 4-10 зубов
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="quiz-variants__variant" data-step="step2">
+												<input type="radio" name="question-1" id="q-1-3" value=" Только на нижней челюсти" required=""
+													data-index="1-3">
+												<label for="q-1-3" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/quiz_1-3.webp" type="image/webp">
+																<img src="img/quiz_1-3.jpg" alt="">
+															</picture>
+														</div>
+														<div class="quiz-question__label">
+															Потеряно <br>
+															большинство зубов
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="quiz-variants__variant" data-step="step2">
+												<input type="radio" name="question-1" id="q-1-4" value=" Только на нижней челюсти" required=""
+													data-index="1-4">
+												<label for="q-1-4" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/quiz_1-4.webp" type="image/webp">
+																<img src="img/quiz_1-4.jpg" alt="">
+															</picture>
+														</div>
+														<div class="quiz-question__label">
+															Полная потеря зубов
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="quiz-variants__variant" data-step="step2">
+												<input type="radio" name="question-1" id="q-1-5" value=" Только на нижней челюсти" required=""
+													data-index="1-5">
+												<label for="q-1-5" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/quiz_1-5.webp" type="image/webp">
+																<img src="img/quiz_1-5.jpg" alt="">
+															</picture>
+														</div>
+														<div class="quiz-question__label">
+															Затрудняюсь ответить
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="step__buttons">
+									<button type="button" class="quiz-variants__btn _main-btn next-step" data-step="step2"
+										data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+										data-bs-content="Чтобы открыть следующий вопрос, выберите один из вариантов ответа"
+										data-bs-original-title="" title="" aria-describedby="popover928694">на следующий
+										шаг</button>
+									<div class="step__btnblock">
+										<button class="quiz-variants__skip" data-step="step2">
+											Пропустить вопрос
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="step2 step quiz-inner__item  ">
+								<div class="step__block">
+									<div class="step__left">
+										<h3 class="step__title">02. Вы хотели бы<br>
+											установить импланты на:
+										</h3>
+										<div class="step__variants quiz-variants">
+											<div class="quiz-variants__variant" data-step="step3">
+												<input type="radio" name="question-2" id="q-2-1" value="Верхнюю челюсть" required=""
+													data-index="2-1">
+												<label for="q-2-1" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<!--<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/img4.webp" type="image/webp">
+																<img src="img/img4.jpg" alt="">
+															</picture>
+														</div>-->
+														<div class="quiz-question__label">
+															Верхнюю челюсть
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="quiz-variants__variant" data-step="step3">
+												<input type="radio" name="question-2" id="q-2-2" value="Нижнюю челюсть" required=""
+													data-index="2-2">
+												<label for="q-2-2" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<!--<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/img5.webp" type="image/webp">
+																<img src="img/img5.jpg" alt="">
+															</picture>
+														</div>-->
+														<div class="quiz-question__label">
+															Нижнюю челюсть
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="quiz-variants__variant" data-step="step3">
+												<input type="radio" name="question-2" id="q-2-3" value="Обе челюсти" required=""
+													data-index="2-3">
+												<label for="q-2-3" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<!--<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/img6.webp" type="image/webp">
+																<img src="img/img6.jpg" alt="">
+															</picture>
+														</div>-->
+														<div class="quiz-question__label">
+															Обе челюсти
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="step__buttons">
+									<button type="button" class="quiz-variants__btn next-step _main-btn" data-step="step3"
+										data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+										data-bs-content="Чтобы открыть следующий вопрос, выберите один из вариантов ответа"
+										data-bs-original-title="" title="" aria-describedby="popover928694">на следующий
+										шаг</button>
+									<div class="step__btnblock step__btnblock_mod">
+										<button class="quiz-variants__skip" data-step="step3">
+											Пропустить вопрос
+										</button>
+										<!--<button class="quiz-variants__prev" data-step="step1">
+											Вернуться к предыдущему вопросу
+										</button>-->
+									</div>
+								</div>
+							</div>
+
+							<div class="step3 step quiz-inner__item">
+								<div class="step__block">
+									<div class="step__left">
+										<h3 class="step__title">03. Когда вы хотели бы<br>
+											начать лечение?</h3>
+										<div class="step__variants quiz-variants">
+											<div class="quiz-variants__variant" data-step="step4">
+												<input type="radio" name="question-3" id="q-3-1" value="Как можно скорее" required=""
+													data-index="3-1">
+												<label for="q-3-1" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<div class="quiz-question__picture">
+															<!--<picture>
+																<source srcset="img/img4.webp" type="image/webp">
+																<img src="img/img4.jpg" alt="">
+															</picture>-->
+														</div>
+														<div class="quiz-question__label">
+															Как можно скорее
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="quiz-variants__variant" data-step="step4">
+												<input type="radio" name="question-3" id="q-3-2" value="В течение 2-х недель" required=""
+													data-index="3-2">
+												<label for="q-3-2" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<!--<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/img5.webp" type="image/webp">
+																<img src="img/img5.jpg" alt="">
+															</picture>
+														</div>-->
+														<div class="quiz-question__label">
+															В течение 2-х недель
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="quiz-variants__variant" data-step="step4">
+												<input type="radio" name="question-3" id="q-3-3" value="В течение месяца" required=""
+													data-index="3-3">
+												<label for="q-3-3" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<div class="quiz-question__picture">
+															<!--<picture>
+																<source srcset="img/img6.webp" type="image/webp">
+																<img src="img/img6.jpg" alt="">
+															</picture>-->
+														</div>
+														<div class="quiz-question__label">
+															В течение месяца
+														</div>
+													</div>
+												</label>
+											</div>
+											<div class="quiz-variants__variant" data-step="step4">
+												<input type="radio" name="question-3" id="q-3-4" value="В течение года" required=""
+													data-index="3-4">
+												<label for="q-3-4" class="quiz-variants__radio-label">
+													<div class="quiz-variants__question quiz-question">
+														<!--<div class="quiz-question__picture">
+															<picture>
+																<source srcset="img/img6.webp" type="image/webp">
+																<img src="img/img6.jpg" alt="">
+															</picture>
+														</div>-->
+														<div class="quiz-question__label">
+															В течение года
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="step__buttons">
+									<button type="button" class="quiz-variants__btn next-step _main-btn" data-step="step6"
+										data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+										data-bs-content="Чтобы открыть следующий вопрос, выберите один из вариантов ответа"
+										data-bs-original-title="" title="" aria-describedby="popover928694">на следующий
+										шаг</button>
+									<div class="step__btnblock step__btnblock_mod">
+										<button class="quiz-variants__skip" data-step="step6">
+											Пропустить вопрос
+										</button>
+										<!--<button class="quiz-variants__prev" data-step="step2">
+											Вернуться к предыдущему вопросу
+										</button>-->
+									</div>
+								</div>
+							</div>
+
+
+							<div class="step4 step quiz-inner__item ">
+								<div class="step__block">
+									<div class="step__left last-step">
+										<h3 class="last-step__title">Оставьте контакты и получите:</h3>
+										<picture>
+											<source srcset="img/last-step-lists.webp" type="image/webp">
+											<img src="img/last-step-lists.png" alt="" class="last-step__lists">
+										</picture>
+										<div class="last-step__items">
+											<div class="last-step__item">
+												<picture class="last-step__pic">
+													<source srcset="img/quiz-last1.webp" type="image/webp">
+													<img src="img/quiz-last1.png" alt="">
+												</picture>
+												<p class="last-step__description">
+													<b>Предварительный<br>
+														расчет стоимости</b>
+												</p>
+											</div>
+											<div class="last-step__item">
+												<picture class="last-step__pic">
+													<source srcset="img/quiz-last2.webp" type="image/webp">
+													<img src="img/quiz-last2.png" alt="">
+												</picture>
+												<p class="last-step__description">
+													<b>Консультацию</b><br>
+													стоматолога
+												</p>
+											</div>
+											<div class="last-step__item">
+												<picture class="last-step__pic">
+													<source srcset="img/quiz-last3.webp" type="image/webp">
+													<img src="img/quiz-last3.png" alt="">
+												</picture>
+												<p class="last-step__description">
+													<b>ОПТГ-снимок + 3</b> <br>
+													плана лечения<br>
+													бесплатно
+												</p>
+											</div>
+										</div>
+										<input type="tel" class="_form-control last-step__phone" name="phone"
+											placeholder="Введите номер телефона" required="">
+										<button class="_main-btn last-step__btn">
+											Получить расчет стоимости <br>
+											лечения + подарок
+											<picture>
+												<source srcset="img/last-step-gift.webp" type="image/webp">
+												<img src="img/last-step-gift.png" alt="" class="last-step__gift">
+											</picture>
+										</button>
+										<div class="last-step__policy">
+											Нажимая на кнопку, вы соглашаетесь
+											с <a class="policy" data-bs-toggle="modal" data-bs-target="#policy">условиями обработки
+												персональных
+												данных</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="quiz-right" id="quiz-right">
+						<div class="quiz-right__h4">
+							<b>По окончанию <br>
+								теста вы получите:</b>
+						</div>
+						<div class="quiz-right__wrapper">
+							<div class="quiz-right__get">
+								<div class="quiz-right__pic">
+									<picture>
+										<source srcset="img/calc.webp" type="image/webp">
+										<img src="img/calc.png" alt="">
+									</picture>
+								</div>
+								<div class="quiz-right__title">
+									<b>Предварительной <br> расчет стоимости</b> <br> установки имплантов
+								</div>
+							</div>
+							<div class="quiz-right__get">
+								<div class="quiz-right__pic">
+									<picture>
+										<source srcset="img/present2.webp" type="image/webp">
+										<img src="img/present2.png" alt="">
+									</picture>
+								</div>
+								<div class="quiz-right__title">
+									<b>ОПТГ-снимок + 3</b> <br> плана лечения <br> бесплатно
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="modal fade policy-modal" id="policy" tabindex="-1" aria-labelledby="policyLabel" style="display: none;"
 	aria-hidden="true">
 	<div class="policy-modal__dialog modal-dialog modal-dialog-centered" role="document">

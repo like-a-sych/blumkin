@@ -683,3 +683,19 @@
 }
 
 /* policy */
+
+/* quizModal */
+.quizModal-modal__dialog {
+	max-width: 990px;
+
+	@media (max-width: ($md2 + px)) {
+		max-width: 750px;
+	}
+
+	@media (max-width: ($md3 + px)) {
+		.quiz {
+			margin-top: 30px;
+		}
+	}
+}
+/* quizModal */
