@@ -4959,6 +4959,9 @@
 		overflow: scroll;
 		gap: 15px;
 	}
+	@media (max-width: ($md4 + px)) {
+		gap: 10px;
+	}
 	// .horizon-blocks__item
 
 	&__item {
