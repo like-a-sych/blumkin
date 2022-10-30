@@ -2157,6 +2157,7 @@
 
 	&__h2 {
 		margin-top: 95px;
+
 		/* Style for "Лечение зу" */
 
 		line-height: calc(60 / 44 * 100%);
@@ -4157,10 +4158,15 @@
 .section-60 {
 	margin-top: 95px;
 	// .section-60__h2
-
+	@media (max-width: ($md3 + px)) {
+		margin-top: 50px;
+	}
 	&__h2 {
-		font-size: 43px;
-		line-height: calc(59 / 43 * 100%);
+		@media (max-width: ($md1 + px)) {
+			br {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -4189,6 +4195,22 @@
 	padding-top: 9px;
 	padding-bottom: 11px;
 	margin-top: 50px;
+
+	@media (max-width: ($md2 + px)) {
+		margin-top: 25px;
+		height: auto;
+	}
+
+	@media (max-width: ($md4 + px)) {
+		margin-top: 15px;
+		height: auto;
+	}
+
+	@media (max-width: ($md6 + px)) {
+		padding-left: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 	// .slider-nav__item
 	.slick-current.slick-active {
 		background-color: #4eb8c7;
@@ -4212,12 +4234,47 @@
 		padding-top: 7px;
 		padding-bottom: 7px;
 		cursor: pointer;
+		@media (max-width: ($md1 + px)) {
+			max-width: 100%;
+			min-width: 100%;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			padding-left: 10px;
+		}
+
+		@media (max-width: ($md6 + px)) {
+			padding-left: 5px;
+		}
 	}
 
 	// .slider-nav__pic
 
 	&__pic {
 		margin-right: 15px;
+
+		@media (max-width: ($md2 + px)) {
+			max-width: 45px;
+			margin-right: 10px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			margin-right: 20px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			margin-right: 10px;
+			max-width: 35px;
+		}
+
+		@media (max-width: ($md5 + px)) {
+			display: none;
+		}
 	}
 
 	// .slider-nav__text
@@ -4228,6 +4285,10 @@
 		font-weight: 400;
 		letter-spacing: 0.1px;
 		line-height: calc(20 / 12 * 100%);
+
+		@media (max-width: ($md6 + px)) {
+			font-size: 11px;
+		}
 	}
 
 	// .slider-nav__nextslide
@@ -4246,6 +4307,27 @@
 		right: 24px;
 		top: 36%;
 		cursor: pointer;
+		&:hover::after {
+			opacity: 1;
+			transition: all 0.4s;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			transition: all 0.4s;
+			background-image: linear-gradient(to top, #2a95a6 0%, #6ed3e0 100%);
+			opacity: 0;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 100%;
+			z-index: -1;
+			box-shadow: inset 0 0 35px rgba(70, 209, 221, 0.28);
+		}
+		@media (max-width: ($md2 + px)) {
+			right: 8px;
+		}
 	}
 }
 .slider-for1 {
@@ -4253,15 +4335,32 @@
 	margin-top: 45px;
 	padding-bottom: 85px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-
+	@media (max-width: ($md3 + px)) {
+		margin-top: 5px;
+		padding-bottom: 40px;
+	}
 	&__item {
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: ($md3 + px)) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	// .slider-for__flex
 
 	// .slider-for__pic
+	&__rightside {
+		@media (max-width: ($md1 + px)) {
+			margin-left: 30px;
+		}
+		@media (max-width: ($md3 + px)) {
+			order: -1;
+			margin-left: 0;
+			margin-bottom: 10px;
+		}
+	}
 
 	&__pic {
 	}
@@ -4312,19 +4411,61 @@
 		line-height: calc(46 / 22 * 100%);
 		margin-top: 23px;
 		margin-bottom: 25px;
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 0;
+			margin-bottom: 0px;
+			text-align: center;
+		}
+		@media (max-width: ($md4 + px)) {
+			line-height: 1.3;
+			margin-bottom: 5px;
+		}
+
+		@media (max-width: ($md5 + px)) {
+			font-size: 20px;
+		}
 	}
 
 	&__results {
 		display: flex;
+		@media (max-width: ($md6 + px)) {
+			flex-direction: column;
+		}
 	}
 
-	&__result:not(:first-of-type) {
-		margin-left: 42px;
+	&__result {
+		@media (max-width: ($md3 + px)) {
+			flex-basis: 50%;
+		}
+		&:not(:first-of-type) {
+			margin-left: 42px;
+
+			@media (max-width: ($md1 + px)) {
+				margin-left: 20px;
+			}
+
+			@media (max-width: ($md3 + px)) {
+				margin-left: 15px;
+			}
+
+			@media (max-width: ($md5 + px)) {
+				margin-left: 10px;
+			}
+
+			@media (max-width: ($md6 + px)) {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
 	}
 
 	// .slider-for__subtitle
 	&__list {
 		margin-top: 20px;
+		@media (max-width: ($md3 + px)) {
+			margin-top: 5px;
+		}
 	}
 	&__list-item {
 		color: #000;
@@ -4333,6 +4474,12 @@
 		font-style: normal;
 		line-height: calc(30 / 16 * 100%);
 		margin-bottom: 0;
+		@media (max-width: ($md2 + px)) {
+			line-height: 1.3;
+			&:not(:first-of-type) {
+				margin-top: 5px;
+			}
+		}
 	}
 }
 
@@ -4342,7 +4489,7 @@
 .section-61 {
 	margin-top: 95px;
 	@media (max-width: ($md3 + px)) {
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 
 	// .section-61__title

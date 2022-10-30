@@ -71,7 +71,9 @@
 		width: 6px;
 		height: 6px;
 		background-color: #69c4d0;
-		top: 11px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
 		left: 0;
 	}
 
@@ -147,7 +149,8 @@
 	font-size: 44px;
 	font-weight: 300;
 }
-.section-61__title {
+.section-61__title,
+.section-60__title {
 	font-size: 43px;
 	line-height: calc(59 / 43 * 100%);
 }
@@ -156,7 +159,8 @@
 ._h2,
 ._h2biglight,
 .section-44__h2,
-.section-61__title {
+.section-61__title,
+.section-60__title {
 	@media (max-width: ($md2 + px)) {
 		font-size: 36px;
 	}
