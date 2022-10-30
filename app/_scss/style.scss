@@ -5221,21 +5221,57 @@
 /* section-23 */
 .section-23 {
 	padding-top: 109px;
+	@media (max-width: ($md3 + px)) {
+		padding-top: 50px;
+	}
+
 	// .section-23__h2
 
 	// .section-23__horizon-blocks
 
 	&__horizon-blocks {
 		margin-top: 38px;
+		@media (max-width: ($md3 + px)) {
+			margin-top: 20px;
+		}
+		@media (max-width: ($md4 + px)) {
+			margin-top: 15px;
+		}
 	}
 }
 
 .horizon-blocks__item-right {
+	@media (max-width: ($md3 + px)) {
+		flex-basis: 500px;
+		flex-shrink: 1;
+		margin: auto;
+	}
 	.horizon-blocks__container {
 		justify-content: flex-end;
 		padding-right: 137px;
+		@media (max-width: ($md1 + px)) {
+			padding-right: 80px;
+		}
+
 		@media (max-width: ($md2 + px)) {
 			padding-right: 22px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			justify-content: flex-start;
+		}
+	}
+
+	.horizon-blocks__inner {
+		@media (max-width: ($md2 + px)) {
+			max-width: 60%;
+			br {
+				display: none;
+			}
+		}
+
+		@media (max-width: ($md3 + px)) {
+			max-width: 100%;
 		}
 	}
 }
