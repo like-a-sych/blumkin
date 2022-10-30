@@ -2812,6 +2812,18 @@
 			overflow: hidden;
 			border-radius: 10px;
 		}
+
+		@media (max-width: ($md4 + px)) {
+			background-image: url("../img/sec52-back1.png");
+			background-size: cover;
+			z-index: 0;
+			picture:first-of-type {
+				display: none;
+			}
+		}
+		@media (max-width: ($md5 + px)) {
+			height: 350px;
+		}
 	}
 
 	&__card:first-of-type {
@@ -2834,6 +2846,19 @@
 		@media (max-width: ($md1 + px)) {
 			padding: 30px 0 0 30px;
 		}
+
+		@media (max-width: ($md4 + px)) {
+			padding: 15px;
+			backdrop-filter: blur(1px);
+			.section-52__list {
+				&:last-of-type {
+					margin-top: 0;
+				}
+			}
+		}
+		@media (max-width: ($md5 + px)) {
+			backdrop-filter: blur(2px);
+		}
 	}
 
 	&__card:last-of-type &__description {
@@ -2846,6 +2871,15 @@
 		}
 		@media (max-width: ($md3 + px)) {
 			padding: 3% 0 0 40%;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			padding: 3% 3% 3% 40%;
+		}
+
+		@media (max-width: ($md5 + px)) {
+			padding: 3%;
+			backdrop-filter: blur(2px);
 		}
 	}
 
@@ -2862,6 +2896,12 @@
 		@media (max-width: ($md3 + px)) {
 			right: -50px;
 		}
+		@media (max-width: ($md4+ px)) {
+			z-index: -1;
+		}
+		@media (max-width: ($md6+ px)) {
+			right: 0;
+		}
 	}
 
 	&__p1 {
@@ -2873,6 +2913,13 @@
 		@media (max-width: ($md3 + px)) {
 			height: 100%;
 			left: 30px;
+		}
+		@media (max-width: ($md4 + px)) {
+			left: -20px;
+		}
+
+		@media (max-width: ($md5 + px)) {
+			display: none;
 		}
 	}
 
@@ -2889,6 +2936,16 @@
 		@media (max-width: ($md3 + px)) {
 			height: 60%;
 		}
+		@media (max-width: ($md4 + px)) {
+			top: 80px;
+		}
+
+		@media (max-width: ($md5 + px)) {
+			top: 0;
+			right: -30px;
+			left: auto;
+			transform: scale(-1, 1);
+		}
 	}
 
 	// .section-52__description
@@ -2900,6 +2957,16 @@
 		top: 0;
 		left: 0;
 		z-index: 1;
+
+		@media (max-width: ($md4 + px)) {
+			position: static;
+		}
+
+		@media (max-width: ($md5 + px)) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
 
 	// .section-52__subtitle
@@ -2915,12 +2982,21 @@
 		@media (max-width: ($md3 + px)) {
 			font-size: 20px;
 		}
+
+		@media (max-width: ($md4 + px)) {
+			br {
+				display: none;
+			}
+		}
 	}
 
 	// .section-52__lists
 
 	&__lists {
 		display: flex;
+		@media (max-width: ($md4 + px)) {
+			flex-direction: column;
+		}
 	}
 
 	// .section-52__list
