@@ -5409,12 +5409,24 @@
 	// .section-26__horizon-button
 	&__h2 {
 		padding-top: 156px;
+		@media (max-width: ($md1 + px)) {
+			br {
+				display: none;
+			}
+		}
+		@media (max-width: ($md3 + px)) {
+			padding-top: 70px;
+		}
 	}
 	&__h3 {
 		font-weight: 600;
 		margin-top: 30px;
 		@media (max-width: ($md1 + px)) {
 			margin-top: 15px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 7px;
 		}
 	}
 
@@ -5423,8 +5435,14 @@
 		@media (max-width: ($md2 + px)) {
 			display: flex;
 			flex-direction: column;
-			background-color: #ecece8;
+			margin: auto;
+			max-width: 500px;
 			border-radius: 10px;
+			margin-top: 25px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 20px;
 		}
 	}
 }
@@ -5434,6 +5452,11 @@
 	// .horizon-button__picture
 
 	&__picture {
+		@media (max-width: ($md2 + px)) {
+			background-color: #ecedee;
+			border-radius: 10px;
+			overflow: hidden;
+		}
 	}
 
 	// .horizon-button__inner
@@ -5454,9 +5477,13 @@
 
 		@media (max-width: ($md2 + px)) {
 			position: static;
-
-			order: -1;
 			display: block;
+			padding: 0;
+			margin-top: 15px;
+		}
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 10px;
 		}
 	}
 
@@ -5467,6 +5494,14 @@
 		font-size: 36px;
 		font-weight: 700;
 		line-height: calc(48 / 36 * 100%);
+
+		@media (max-width: ($md3 + px)) {
+			font-size: 30px;
+		}
+
+		@media (max-width: ($md4 + px)) {
+			font-size: 25px;
+		}
 	}
 
 	// .horizon-button__subtitle
@@ -5475,6 +5510,9 @@
 		margin-top: 23px;
 		font-size: 18px;
 		line-height: calc(28 / 18 * 100%);
+		@media (max-width: ($md3 + px)) {
+			margin-top: 5px;
+		}
 	}
 
 	// .horizon-button__subtext
@@ -5486,6 +5524,10 @@
 		@media (max-width: ($md1 + px)) {
 			margin-top: 25px;
 		}
+
+		@media (max-width: ($md2 + px)) {
+			margin-top: 15px;
+		}
 	}
 
 	// .horizon-button__ul
@@ -5493,11 +5535,19 @@
 	&__ul {
 		margin-top: 20px;
 		font-size: 18px;
+
+		@media (max-width: ($md3 + px)) {
+			margin-top: 15px;
+		}
 	}
 
 	&__ul {
 		._checkeul {
 			margin-bottom: 15px;
+
+			@media (max-width: ($md3 + px)) {
+				margin-bottom: 10px;
+			}
 		}
 	}
 
@@ -5516,6 +5566,14 @@
 
 		@media (max-width: ($md1 + px)) {
 			margin-top: 20px;
+		}
+
+		@media (max-width: ($md2 + px)) {
+			margin: auto;
+			margin-top: 20px;
+		}
+		@media (max-width: ($md5 + px)) {
+			width: 100%;
 		}
 	}
 }
